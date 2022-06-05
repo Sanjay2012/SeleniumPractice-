@@ -65,9 +65,9 @@ public class FormFillPo {
 	public void selectEduLevel(String valueToSelect) {	
 		if (valueToSelect.equalsIgnoreCase("High School")) {
 			driver.findElement(highSchool).click();
-		}else if (valueToSelect.equalsIgnoreCase("School")) {
+		}else if (valueToSelect.equalsIgnoreCase("College")) {
 			driver.findElement(school).click();
-		}else if(valueToSelect.equalsIgnoreCase("Grad School")) {
+		}else if (valueToSelect.equalsIgnoreCase("Grad School")) {
 			driver.findElement(gradScool).click();
 		}
 	}
