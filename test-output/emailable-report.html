@@ -9,11 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">39,577</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,219</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.project.test.FacebookLoginPostLogoutTest</td><td><a href="#m0">FacebookLogin</a></td><td rowspan="1">1654446942083</td><td rowspan="1">4325</td></tr><tr class="passedeven"><td><a href="#m1">logout</a></td><td rowspan="1">1654446946435</td><td rowspan="1">17783</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.project.test.FacebookLoginPostLogoutTest</td><td><a href="#m0">FacebookLogin</a></td><td rowspan="1">1654698977963</td><td rowspan="1">2573</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.project.test.FacebookLoginPostLogoutTest</td><td><a href="#m1">logout</a></td><td rowspan="1">1654698980594</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.project.test.FacebookLoginPostLogoutTest#FacebookLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.project.test.FacebookLoginPostLogoutTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.project.test.FacebookLoginPostLogoutTest#FacebookLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;this.emailField&quot; is null
+	at com.facebook.pageobject.FacebookLoginPage.enterUsername(FacebookLoginPage.java:39)
+	at com.project.test.FacebookLoginPostLogoutTest.FacebookLogin(FacebookLoginPostLogoutTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.project.test.FacebookLoginPostLogoutTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method FacebookLoginPostLogoutTest.logout()[pri:0, instance:com.project.test.FacebookLoginPostLogoutTest@3c77d488] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

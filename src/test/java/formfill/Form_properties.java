@@ -1,7 +1,5 @@
 package formfill;
 
-import java.util.concurrent.TimeUnit;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,8 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class FormFill_Junit {
-
+public class Form_properties {
 	public static void main(String[] args) throws InterruptedException {
 		
 		// capture locators of all elements
@@ -20,7 +17,7 @@ public class FormFill_Junit {
 		By jobTitle=By.id("job-title");
 		By eduLevel=By.xpath("//*[@type=\"radio\"]");
 		By sex=By.xpath("//*[@type=\"checkbox\"]");
-		By dropdown=By.xpath("//*[@id=\"select-menu\"]/option");
+		By dropdown=By.xpath("//*[@id=\"select-menu\"]");
 		By date=By.id("datepicker");
 		By submitButton=By.xpath("//*[@role=\"button\"]");
 		By sucessMessage=By.xpath("//*[@role=\"alert\"]");
@@ -30,12 +27,12 @@ public class FormFill_Junit {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://formy-project.herokuapp.com/form");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		
-		driver.findElement(fName).sendKeys("Shiv");
+		driver.findElement(fName).sendKeys("Shubhangi");
 		Thread.sleep(2000);
-		driver.findElement(lName).sendKeys("Kumar");
+		driver.findElement(lName).sendKeys("Pandhare");
 		Thread.sleep(2000);
 		driver.findElement(jobTitle).sendKeys("SDET");
 		Thread.sleep(2000);
@@ -62,7 +59,5 @@ public class FormFill_Junit {
 		Assert.assertEquals(expt, "The form was successfully submitted!");
 		
 		driver.quit();
-		
 	}
-
 }
